@@ -173,25 +173,7 @@ void inicializar_pistas_con_obstaculos(TP *tp) {
     for (int i = 0; i < cantidad_obstaculos; i++) {
         // Determinar tipo de obstáculo (fuerza, destreza, inteligencia)
         enum TP_OBSTACULO tipo_obstaculo = rand() % 3;
-        char *obstaculo_char = malloc(sizeof(char));
-
-        // Insertar el caracter correspondiente en la lista de obstáculos
-        switch (tipo_obstaculo) {
-            case OBSTACULO_FUERZA:
-                *obstaculo_char = IDENTIFICADOR_OBSTACULO_FUERZA;
-                break;
-            case OBSTACULO_DESTREZA:
-                *obstaculo_char = IDENTIFICADOR_OBSTACULO_DESTREZA;
-                break;
-            case OBSTACULO_INTELIGENCIA:
-                *obstaculo_char = IDENTIFICADOR_OBSTACULO_INTELIGENCIA;
-                break;
-            default:
-                fprintf(stderr, "Error: Tipo de obstáculo inválido\n");
-                free(obstaculo_char);
-                return;
-        }
-
+	    
         // Generar posición aleatoria en la longitud de la pista con al menos 5 espacios libres
         int min_posicion = 5;
         int max_posicion = longitud_pista - 5;
