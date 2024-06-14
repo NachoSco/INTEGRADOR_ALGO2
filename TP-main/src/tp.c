@@ -46,7 +46,7 @@ struct datos_de_iteracion {
 
 /*INCOMPLETO:
 
-1°) Inicializar la pista del jugador con "-"
+1°) Inicializar la pista del jugador y bot con "-"
 2°) Hacer tp_agregar_obstaculo
 
 
