@@ -8,6 +8,8 @@
 
 4- Limitaciones de tiempo para mejorar el interfaz: Me habría gustado poder mejorar más el resultado final del trabajo, pero debido a restricciones de tiempo, no pude implementar todas las funcionalidades o mejoras adicionales que tenía en mente.
 
+5- Falta de planificación inicial: Un problema significativo fue mi enfoque inicial de programar sin realizar una planificación de las estructuras de datos necesarias. Esta falta de análisis previo me llevó a trabarme más de lo esperado ya que tenia que ir haciendo ajustes sobre la marcha y tener que volver a modificar funciones una y otra vez como tp_crear().
+
 ## Estructura Interna del TDA TP
 El TDA TP está compuesto por los siguientes elementos:
 
