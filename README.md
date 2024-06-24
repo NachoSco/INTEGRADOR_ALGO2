@@ -1,3 +1,13 @@
+## Introduccion de problemas durante la resolución 
+
+1- Representación de la pista: Inicialmente, asumí incorrectamente que en la pista solo debían incluirse caracteres como "-" para representar segmentos vacíos. Más tarde me di cuenta de que la pista debería contener únicamente los obstáculos y no los caracteres "-", lo cual me llevó a ajustar mi enfoque para manejar adecuadamente los elementos correctos que pueden estar en una pista de carreras.
+
+2- Uso inicial de strings en lugar de listas: Comencé utilizando strings para representar las pistas en lugar de listas. Sin embargo, posteriormente comprendí que las listas serían más apropiadas porque permiten manejar de manera más flexible la inserción, eliminación y ordenación de los obstáculos y otros elementos de la pista.
+
+3- Interpretación incorrecta de tp_obstaculo_pista: En un momento dado, malinterpreté la función tp_obstaculo_pista. Pensé erróneamente que debía devolver un string ordenado mediante un sort, en lugar de mantener el orden original de inserción de los obstáculos. Esta confusión afectó mi implementación inicial de la función y me llevó a revisar y corregir el enfoque.
+
+4- Limitaciones de tiempo para mejorar el interfaz: Me habría gustado poder mejorar más el resultado final del trabajo, pero debido a restricciones de tiempo, no pude implementar todas las funcionalidades o mejoras adicionales que tenía en mente.
+
 ## Estructura Interna del TDA TP
 El TDA TP está compuesto por los siguientes elementos:
 
