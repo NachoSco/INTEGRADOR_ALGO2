@@ -1,4 +1,4 @@
-Estructura Interna del TDA TP
+## Estructura Interna del TDA TP
 El TDA TP está compuesto por los siguientes elementos:
 
 abb_t *abb_pokemon: Un árbol binario de búsqueda (ABB) que almacena los pokémon disponibles. Use esta estructura porque al insertarlos de forma ordenada despues podia obtener los pokemones ordenados con el recorrido INORDEN, ademas es una buena estructura para almacenar datos y la busqueda es log(n) en comparacion con otras estructuras.
@@ -10,7 +10,7 @@ pista_carreras_t *pista: Una estructura que contiene información sobre las pist
 int dificultad: Una forma de guardarme la dificultad ingresada por el usuario para usarlo al momento de crear las pistas e inicializar las cantidades de obstaculos/vidas
 int vidas: guarda las cantidades de veces que el jugador puede repetir la carrera
 
-Complejidades
+## Complejidades
 
 * tp_crear(const char *nombre_archivo):
 
