@@ -150,3 +150,9 @@ int vidas: guarda las cantidades de veces que el jugador puede repetir la carrer
 
 4. **void liberar_menu(menu_t* menu);**
    - Libera la memoria utilizada por el menú.
+
+## Grafico de memoria 
+<div style="text-align: center;">
+  <img width="1000px" src="img/Memoria.PNG">
+</div>
+
