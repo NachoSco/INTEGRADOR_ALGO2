@@ -60,3 +60,93 @@ int vidas: guarda las cantidades de veces que el jugador puede repetir la carrer
   Complejidad Temporal: O(n + m)
   - n es el número de Pokémon en el árbol y m es el tamaño de las listas de obstáculos.
   - Libera todos los recursos asignados dinámicamente, incluyendo los Pokémon en el ABB y los obstáculos en las listas.
+
+### Funciones Generales
+
+1. **void limpiar_pantalla();**
+   - Limpia la pantalla de la consola.
+
+2. **void esperar_ingreso_k();**
+   - Espera la entrada de la tecla 'K' o 'k' para continuar.
+
+### Funciones de Lista y Pista
+
+1. **bool imprimir_elemento(void *elemento, void *contexto);**
+   - Imprime un elemento de la lista (pista).
+
+2. **void pista_imprimir(lista_t *lista);**
+   - Imprime los elementos de una lista que representa la pista.
+
+3. **lista_t *pista_crear_e_inicializar(int longitud);**
+   - Crea una lista de la longitud especificada y la inicializa con el carácter '-'.
+
+### Funciones de Obstáculos
+
+1. **void insertar_obstaculos_pista_bot(TP *tp);**
+   - Inserta obstáculos en la pista del bot según la dificultad del juego.
+
+### Funciones de Inicialización
+
+1. **TP *inicializar_juego(TP *tp, int dificultad);**
+   - Inicializa el juego con la dificultad especificada.
+
+### Funciones de Selección de Pokémon
+
+1. **bool seleccionar_pokemon_en_iteracion(void *elemento, void *contexto);**
+   - Selecciona un Pokémon específico durante una iteración.
+
+2. **const struct pokemon_info* seleccionar_pokemon_aleatorio(TP *tp);**
+   - Selecciona un Pokémon aleatorio de la lista de Pokémon disponibles.
+
+3. **bool inicializar_seleccion_pokemon_bot(TP *tp);**
+   - Inicializa la selección de Pokémon para el bot.
+
+### Funciones del Menú
+
+1. **menu_t* menu_crear();**
+   - Crea un menú vacío.
+
+2. **void mostrar_ayuda(void* menu);**
+   - Muestra la ayuda con los comandos disponibles.
+
+3. **void mostrar_pokemon(void* menu);**
+   - Muestra los Pokémon disponibles para la carrera.
+
+4. **bool iniciar_juego(void* menu);**
+   - Inicia el juego y muestra las opciones de menú.
+
+### Funciones de Simulación y Cálculo
+
+1. **void simular_pokemon(lista_t *lista, unsigned tiempo_total, char jugador);**
+   - Simula el avance de un Pokémon en la pista.
+
+2. **unsigned calcular_puntaje(unsigned Ta, unsigned Tb);**
+   - Calcula el puntaje final de la carrera.
+
+3. **void imprimir_tiempos(unsigned tiempo_jugador1, unsigned tiempo_jugador2, unsigned puntaje);**
+   - Imprime los tiempos y el puntaje final de la carrera.
+
+### Funciones de Impresión
+
+1. **void imprimir_pokemon(const char *nombre);**
+   - Imprime la representación de un Pokémon específico.
+
+2. **void explicar_obstaculos();**
+   - Explica los tipos de obstáculos en la pista.
+
+3. **void imprimir_opciones();**
+   - Imprime las opciones disponibles para el jugador.
+
+### Funciones de Gestión de Menú
+
+1. **bool procesar_comando(menu_t* menu, const char* comando);**
+   - Procesa un comando del menú.
+
+2. **void agregar_opcion_menu(menu_t* menu, const char* comando, void (*funcion_a_ejecutar)(void*), const char* descripcion);**
+   - Agrega una opción al menú.
+
+3. **void inicializar_menu(menu_t* menu);**
+   - Inicializa el menú con las opciones predefinidas.
+
+4. **void liberar_menu(menu_t* menu);**
+   - Libera la memoria utilizada por el menú.
