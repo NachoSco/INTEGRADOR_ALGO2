@@ -153,6 +153,6 @@ int vidas: guarda las cantidades de veces que el jugador puede repetir la carrer
 
 ## Grafico de memoria 
 <div style="text-align: center;">
-  <img width="1000px" src="img/HEAP.PNG">
+  <img width="1000px" src="img/HEAP.png">
 </div>
 
