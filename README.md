@@ -67,7 +67,7 @@ int vidas: guarda las cantidades de veces que el jugador puede repetir la carrer
    - Limpia la pantalla de la consola.
 
 2. **void esperar_ingreso_k();**
-   - Espera la entrada de la tecla 'K' o 'k' para continuar.
+   - Espera la entrada de la tecla 'K' para continuar.
 
 ### Funciones de Lista y Pista
 
